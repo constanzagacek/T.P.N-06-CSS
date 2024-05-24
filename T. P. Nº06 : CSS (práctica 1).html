@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo práctico Nº06 : Empezamos con el diseño (práctica 1)</title>
+    <style>
+        h1 {
+            color: mediumpurple;
+        }
+
+        h2,
+        i,
+        strong {
+            background-color: rgb(200, 172, 255);
+            width: 1250px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Trabajo práctico Nº06 : Empezamos con el diseño (práctica 1)</h1>
+    </header>
+    <main>
+
+        <h2>1 . ¿Qué significa CSS?</h2>
+        <p><strong><i>➢ Significado en español :</i></strong> Hojas de estilo en cascada.<br>
+            <strong><i>➢ Significado en inglés :</i></strong> Cascading Stylesheets.
+        </p>
+
+        <h2>2 . ¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h2>
+        <p>CSS controla cómo se muestran los elementos en la página web, permitiendo separar el contenido (HTML) de la
+            presentación (CSS). El programa que se usa para interpretarlo es el
+            <strong>browser</strong>.
+        </p>
+
+        <h2>3 . ¿A qué se llama regla de CSS?</h2>
+        <p>Las reglas son un conjunto de propiedades y valores que se aplicarán a una o varias etiquetas según
+            necesitemos</p>
+
+        <h2>4 . ¿Cuál es la anatomía de la regla de CSS?. Agregar imagen explicativa y utilizando una lista descriptiva
+            explicar sus elementos.</h2>
+
+        <h3><strong>Anatomía de la regla de CSS :</strong><br></h3>
+        <img src="anatomia.png" alt="Anatomía" widht="200px" height="200px">
+        <dl>
+            <dt><strong><i>Selector:</i></strong></dt>
+            <dd>Selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p" ). Para dar estilo a un
+                elemento diferente, solo cambia el selector.</dd>
+
+            <dt><strong><i>Declaración :</i></strong></dt>
+            <dd>Aplica las propiedades que querés dar al elemento seleccionado en el Selector. En este caso hay una sola
+                regla, pero puede haber más.</dd>
+
+            <dt><strong><i>Propiedades :</i></strong></dt>
+            <dd>Es lo que te permite dar un estilo a un elemento HTML. En el ejemplo la propiedad es color que le dará
+                color a las letras de los párrafos. Siempre las propiedades se ubicarán a la izquierda.</dd>
+
+            <dt><strong><i>Valos de la propiedad :</i></strong></dt>
+            <dd>Las propiedades deben tener un valor. Cada propiedad tiene valores definidos. Cada valor se ubicará a la
+                derecha.</dd>
+
+            <dt><strong><i><u>Importante :</u></i></strong></dt>
+            <dd>Todas las declaraciones terminan con ; .</dd>
+        </dl>
+
+        <h2>5 . ¿Qué es un selector en CSS?</h2>
+        <p>La etiqueta <strong>selector</strong> nos permitirá aplicar estilos a elementos específicos de HTML. De esta
+            forma es posible ser preciso al momento de aplicar diseño a un sitio web.</p>
+
+        <h2>6 . Identificar y definir los selectores: universal, de etiquetas, descendente, de clases, de ID.</h2>
+
+        <dl>
+            <dt><strong>Selector universal</strong></dt>
+            <dd>Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *. <br>
+                <strong>Ejemplo :</strong>
+                * { <br>
+                color:red; <br>
+                } <br>
+                Todos los elementos HTML tendrán un color de texto red.
+            </dd>
+
+            <dt><strong>Selector de etiquetas</strong></dt>
+            <dd>Aplicamos propiedades CSS a una etiqueta. La misma se identifica sin utilizar <>. <br>
+                    <strong>Ejemplo :</strong> <br>
+                    p { <br>
+                    color:red; <br>
+                    } <br>
+                    Podemos, seleccionar varias etiquetas al mismo tiempo concatenándolas con el signo , (coma). <br>
+                    <strong>Ejemplo :</strong> <br>
+                    p,h1 { <br>
+                    color:red; <br>
+                    }</dd>
+
+            <dt><strong>Selector descendente</strong></dt>
+            <dd>Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores <br>
+                siempre están formados por dos o más selectores separados entre si. El último selector será el elemento
+                <br>
+                HTML al que se le aplicará las propiedades de CSS. <br>
+                <strong>Ejemplo :</strong> <br>
+                p span { <br>
+                color:green; <br>
+                }
+            </dd>
+
+            <dt><strong>Selector de clases</strong></dt>
+            <dd>Los selectores de clases comienzan siempre por un . (punto). Los clientes web (navegadores) identifican
+                <br>
+                este punto y lo distinguen del resto de los selectores. <br>
+
+                <strong>Ejemplo :</strong>
+                "p class="primer-parrafo">Texto de un párrafo /p" <br>
+
+                Para definir en HTML el uso de los selectores de clase, se utiliza el atributo class. <br>
+
+                <strong>En css se aplica así:</strong> <br>
+                .primer-parrafo { <br>
+                font-size: 2em; <br>
+                }<br>
+
+                A todas las etiquetas que tengan la clase primer-parrafo, se aplicará un font-size (tamaño de letra)
+                <br>
+                específico. <br>
+
+                Las clases pueden ser utilizadas varias veces y en distintas etiquetas, lo que nos hace pensar que es
+                <br>
+                necesario ver cuales son la características que queremos aplicar a las etiquetas que sean comunes a <br>
+                varias. <br>
+
+                A su vez, podemos seleccionar un conjunto de etiquetas que selecione todas las etiquetas que tengan una
+                <br>
+                clase particular.<br>
+                p.primer-parrafo { <br>
+                color: #445544; <br>
+                }
+            </dd>
+
+            <dt><strong>Selector de ID</strong></dt>
+            <dd>Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra
+                <br>
+                página. Esto se debe a que el atributo ID de HTML identifica a un elemento HTML por medio de un
+                nombre.<br>
+
+                <strong>Ejemplo :</strong>
+                h1 id="titulo"> Título Principal /h1>
+                Para aplicar CSS solamente a ID titulo, tendremos que seleccionar dicho ID utilizar el # seguido del
+                <br>
+                nombre: <br>
+                #titulo {<br>
+                color: violet;<br>
+                }<br>
+                De la misma forma que el caso anterior, podemos seleccionar un elemento basado en el id. <br>
+                <strong>Ejemplo :</strong>
+                a#titulo { <br>
+                color: red; <br>
+                }<br>
+                En el ejemplo anterior se aplicará la propiedad color a la etiqueta a (anchor) que tenga el ID #titulo.
+                <br>
+            </dd>
+        </dl>
+
+        <h2>7 . Explicar brevemente utilizando una lista ordenada: ¿Cómo funciona el CSS?</h2>
+
+        <h3><strong><i>¿Cómo funciona el CSS?</i></strong></h3>
+        <p>Cuando un navegador muestra un documento, debe combinar el contenido con la información de estilo del <br>
+            documento. Procesa el documento en una serie de etapas, que enumeraremos a continuación. Ten en cuenta <br>
+            que este es un modelo muy simplificado de lo que sucede cuando un navegador carga una página web y que <br>
+            cada navegador gestiona el proceso de manera diferente. Pero esto es más o menos lo que sucede. </p>
+
+        <ol>
+            <li>
+                El navegador carga el HTML (por ejemplo, lo recibe de la red).
+            </li>
+
+            <li>
+                Convierte el HTML en un DOM ( modelo de objetos del documento ). El DOM representa el documento en la
+                <br>
+                memoria del ordenador. Lo explicaremos más detalladamente en la sección siguiente.
+            </li>
+
+            <li>
+                Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como
+                <br>
+                las imágenes y los videos incrustados... ¡y también el CSS vinculado! JavaScript aparece un poco más
+                <br>
+                adelante en el proceso, pero no vamos a hablar de ello aún para evitar complicar las cosas.
+            </li>
+
+            <li>
+                El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de <br>
+                selector. Por ejemplo, elemento, clase, ID, y así sucesivamente. Para cada tipo de selector que <br>
+                encuentre, calcule qué reglas deben aplicarse ya qué nodos en el DOM se les aplica el estilo según <br>
+                corresponda (este paso intermedio se llama árbol de renderización).
+            </li>
+
+            <li>
+                El árbol de renderización presenta la estructura en la que los nodos deben aparecer después de aplicarle
+                <br>
+                las reglas.
+            </li>
+
+            <li>
+                En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).
+            </li>
+        </ol>
+
+        <p>El siguiente diagrama ofrece una visión sencilla de este proceso.</p>
+        <img src="anatomia.png" alt=anatomia widht="200px" height="200px">
+
+        <h2>8 . ¿Cuáles son las tres formas para vincular CSS con HTML?</h2>
+        <p>Las tres fromas para vincular CSS son : <br>
+            <strong>Etiqueta style :</strong> Esta etiqueta se utiliza dentro de la etiqueta <u>head</u>, es decir <br>
+            que los CSS se aplican al mismo documento HTML. <br>
+            <strong>Atributo style :</strong> En el archivo HTML de preferencía se aplicara el estilo directamente <br>
+            a la etiqueta. <br>
+            <strong>Archivo style :</strong> Esta opción nos permite vincular un archivo HTML con un archivo CSS; <br>
+            en el "head" del HTML debemos de utilizar la etiqueta <u>link</u>. <br>
+        </p>
+
+        <h2>9 . Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
+            siguientes pasos: <br>
+            ➢ Hacer clic en View All Designs <br>
+            ➢ Elegir dos diseños y abrirlo en pestañas distintas <br>
+            ➢ En el primer diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el
+            navegador) <br>
+            ➢ En el segundo diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el
+            navegador) <br>
+            ➢ Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿son iguales?
+            <br>
+            ➢ ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño? <br>
+            ➢ Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos? <br>
+            ➢ En líneas generales, el mismo HTML, ¿Puede tener diferentes diseños?
+        </h2>
+        <ul>
+            <li>Primer diseño :</li>
+            <a href="https://www.csszengarden.com/182/">https://www.csszengarden.com/182/</a>
+
+            <li>Segundo diseño</li>
+            <a href="https://www.csszengarden.com/057/">https://www.csszengarden.com/057/</a>
+
+            <li><strong>¿Son iguales?</strong></li>
+            <p>Sí, las etiquetas dentro de body son idénticas en ambos diseños elegidos.</p>
+
+            <li><strong>¿Qué es lo distinto?</strong></li>
+            <p>Lo que varía entre los diseños es únicamente el archivo CSS que se carga. Aunque el contenido HTML es el
+                <br>
+                mismo, el aspecto visual cambia drásticamente debido a las diferencias en los archivos CSS aplicados.
+                <br>
+            </p>
+
+            <li><strong>¿Qué contribuye al cambio de diseño?</strong></li>
+            <p>El cambio de diseño se logra únicamente a través de CSS. La estructura HTML permanece constante, pero los
+                <br>
+                diferentes archivos CSS aplicados alteran la presentación visual del contenido. Esto incluye colores,
+                <br>
+                fuentes, márgenes, posicionamiento, y otros estilos visuales.
+            </p>
+
+            <li><strong>¿Pueden tener diferentes diseños?</strong></li>
+            <p>Sí, el mismo HTML puede tener diferentes diseños aplicando distintos archivos CSS. CSS se encarga de la
+                <br>
+                presentación visual de la página, mientras que HTML proporciona la estructura del contenido. Esto <br>
+                permite separar el contenido (HTML) de la presentación (CSS), lo que facilita cambiar el estilo visual
+                <br>
+                sin modificar el contenido estructural.
+            </p>
+        </ul>
+    </main>
+    <footer>
+        Constanza Gacek / 4º3º / Com.: E / C. E. T. Nº30 / T. T.
+    </footer>
+</body>
+
+</html>

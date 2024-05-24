@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de cajas</title>
+    <style>
+        .caja{
+            background-color:skyblue;
+            /*Ancho*/
+            width: 200px;
+            /*Alto*/
+            height: 200px;
+            /*Alineación del texto*/
+            text-align: center; 
+            /*Bordes*/
+            /*border: 5px solid  blue;*/ /*requiere de 3 elementos: tamaño, tipo y color*/
+            /*border-style: dotted;
+            border-color: powderblue;*/
+            border-top: 2px solid deepskyblue;
+            border-bottom: 2px solid deepskyblue;
+            /*La caja contiene 4 lados :
+            > Top : Arriba
+            > Right : Derecha
+            > Bottom : Abajo
+            > Left : Izquierda*/
+            /*Padding : Relleno entre el borde y el contenido*/
+            padding: 25px; /*Cuando hay un sólo valor, se aplica en los 4 lados*/
+            padding-left: 0px; /*El valor minimo va a ser 0*/ /*padding-top padding-right padding-bottom*/
+            /*Margenes*/
+            margin: 50px; /*Se aplica en los 4 lados*/
+            margin-right: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        C. E. T. Nº30
+    </div>
+</body>
+</html>
