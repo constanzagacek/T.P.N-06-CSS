@@ -1,0 +1,30 @@
+/*Comentario en css "/* "*/
+body {
+    background-color: #ffccd5e1; /*Color de fondo*/
+    color: #ff758f; /*Color de letra*/
+    text-align: center; /*Alineación de texto*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0; /*Elimino el margen de los cuatro lados*/
+}
+/*Encabezado*/
+header {
+    background-color: #ff4d6d;
+    color: #c9184a;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header h1 {
+margin-top: 0;
+margin-bottom: 0;
+text-transform: uppercase; /*Letras en mayúscula*/
+font-size: 2.5em; /*Tamaño de fuente. Es una unidad de medida de CSS. Es relativa al elemento padre de 16px.*/
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block; /*Pone la lista en horizontal*/
+    margin: 10px;
+}
