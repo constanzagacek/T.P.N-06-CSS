@@ -6,7 +6,8 @@ body {
     margin: 0px;
 }
 
-header, h1 {
+header,
+h1 {
     background-color: #73a942;
     color: #aad576;
     margin-top: 0;
@@ -22,7 +23,8 @@ section {
     text-align: left;
 }
 
-section, h2 {
+section,
+h2 {
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -38,12 +40,14 @@ section, h2 {
 footer {
     nav {
         background-color: #73a942;
+
         ul {
             li {
                 background-color: transparent;
                 border: 0;
 
-                a, p {
+                a,
+                p {
                     color: #aad576;
                 }
             }
@@ -51,9 +55,25 @@ footer {
     }
 }
 
-.sociales, li {
+.sociales {
     list-style: none;
     margin: 10px;
+    background-color: #73a942;
+    color: #aad576;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li {
+        margin: 10px;
+    }
+}
+
+
+
+.sociales ul li {
     display: inline-block;
 }
 
@@ -61,6 +81,3 @@ footer {
     width: 70px;
     margin: 10px;
 }
-
-
-
